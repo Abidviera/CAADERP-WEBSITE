@@ -1,0 +1,348 @@
+.AttendanceManagemnet {
+  color: white;
+  font-family: "Poppins", serif;
+  background-color: #161828;
+}
+.firstsection {
+  
+  background: linear-gradient(to bottom, #0f2027, #203a43, #161828);
+
+  
+  .navbar-brand span {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .nav-link {
+    color: #a6a7a8 !important;
+    transition: color 0.3s ease;
+  }
+  .nav-link:hover {
+    color: #fdbb25 !important;
+  }
+  .contact-link {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    h1 {
+      margin-top: 4%;
+      font-size: 4rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      
+
+      span {
+        color: #fdbb25;
+      }
+    }
+    .secondaryheading{
+        display: flex;
+        justify-content: space-between;
+
+        .subheading{
+            width: 70%;
+            font-size: 1.2rem;
+        }
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .try-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            background-color: transparent;
+            border: 2px solid #fdbb25; 
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+          }
+          
+          .try-button i {
+            margin-left: 10px;
+            font-size: 20px;
+            transition: transform 0.3s ease-in-out;
+          }
+          
+          .try-button:hover {
+            background-color: #fdbb25; 
+            color: #2b2b3b; 
+          }
+          
+          .try-button:hover i {
+            transform: translateX(5px); 
+          }
+          
+      }
+      
+      
+  }
+
+  @media (max-width: 768px) {
+    .container h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .secondaryheading {
+      flex-direction: column; 
+       align-items: center; 
+    }
+    .subheading {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+      text-align: center; 
+
+    }
+  
+    .button-container .try-button {
+      font-size: 12px;
+      padding: 6px 14px;
+    }
+  }
+  
+ 
+
+  .header-images{
+    padding-top: 3%;
+   
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    padding-left: 5%;
+    
+     .webimage{
+       width: 80%;
+       height: auto;
+       object-fit:cover;
+      
+      
+     }
+     .mobileImage{
+       top: 15%;
+       left: 67%;
+       width: 25%;
+       height: auto;
+       position: absolute;
+       
+     }
+   }
+}
+
+
+@media screen and (max-width: 768px) {
+  .header-images {
+    flex-direction: column; 
+    align-items: center;
+
+    .webimage {
+      width: 100%; 
+    }
+
+    .mobileImage {
+      position: static; 
+      width: 50%; 
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-images {
+    height: auto; 
+    padding-top: 2%;
+
+    .webimage {
+      width: 100%; 
+      height: auto;
+    }
+
+    .mobileImage {
+      width: 60%; 
+      margin-top: -15%;
+      margin-left: 5%;
+    }
+  }
+}
+.contentSection {
+  background-color: #161828;
+   
+
+     .featuresSection{
+      h1 {
+        margin-top: 4%;
+         font-size: 2.7rem;
+         text-transform: uppercase;
+         font-weight: 700;
+         
+     
+         span {
+           color: #fdbb25;
+         }
+       }
+     }
+
+     .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .try-button {
+        margin-top: 50px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 8px 24px;
+          font-size: 16px;
+          font-weight: 600;
+          color: #ffffff;
+          background-color: transparent;
+          border: 2px solid #fdbb25; 
+          border-radius: 25px;
+          text-decoration: none;
+          transition: all 0.3s ease-in-out;
+          position: relative;
+        }
+        
+        
+        .try-button:hover {
+          background-color: #fdbb25; 
+          color: #2b2b3b; 
+        }
+        
+        
+        
+    }
+
+
+    .attendance-container {
+      max-width: 1400px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 10px;
+    }
+    
+    .attendance-Feature {
+      display: flex;
+      align-items: flex-start;
+      padding: 20px;
+      border-radius: 8px;
+  
+      .content {
+        .title {
+          font-size: 18px;
+          font-weight: bold;
+          margin: 0;
+        }
+    
+        .description {
+          font-size: 14px;
+          color: #898989;
+          margin-top: 5px;
+        }
+      }
+    }
+    
+   
+@media screen and (max-width: 800px) {
+  .attendance-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    
+  }
+
+  .featuresSection h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+   
+
+
+
+}
+
+// .content-with-image{
+  
+ 
+//   :host {
+//     display: block;
+//     font-family: Arial, sans-serif;
+//   }
+  
+//   .accordion {
+//     width: 100%;
+//     margin: 20px auto;
+//     border-radius: 5px;
+//   }
+  
+//   .accordion-item {
+//     border-bottom: 1px solid #ddd;
+//   }
+  
+//   .accordion-item:last-child {
+//     border-bottom: none;
+//   }
+  
+//   .accordion-header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 15px 20px;
+//     background: #fff;
+//     cursor: pointer;
+//     font-weight: bold;
+//     transition: background-color 0.3s ease;
+//   }
+  
+//   .accordion-header:hover {
+//     background: #f9f9f9;
+//   }
+  
+//   .accordion-header.active {
+//     color: #000;
+//   }
+  
+//   .accordion-content {
+//     padding: 15px 20px;
+//     background: #f9f9f9;
+//     font-size: 0.95rem;
+//     color: #333;
+//   }
+  
+//   .accordion-content p {
+//     margin: 0;
+//   }
+  
+//   .arrow {
+//     font-size: 1.2rem;
+//     transform: rotate(0);
+//     transition: transform 0.3s ease;
+//   }
+  
+//   .accordion-header.active .arrow {
+//     transform: rotate(180deg);
+  
+//   }
+
+//   .col-image-section img{
+//     width: 100%;
+//     height: auto;
+//     object-fit: contain;
+//   }
+// }

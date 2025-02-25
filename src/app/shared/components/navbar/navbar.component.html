@@ -1,0 +1,137 @@
+<nav class="navbar navbar-expand-lg menu" id="gradiant">
+  <div class="container-fluid">
+    <a class="navbar-brand mx-auto mt-2">
+      <h1 class="LOGO">CAAD</h1>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="row" style="width: 100%">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="caadlist">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active me-4"
+                  aria-current="page"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  routerLink=""
+                >
+                  Modules <i class="bi bi-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" routerLink="/POS">POS System</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" routerLink="/ecommerce"
+                      >E-Commerce</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" routerLink="/erp"
+                      >ERP</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item"routerLink="/inventory-Management">Inventory Management</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" routerLink="/attendance">Attendance management </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" routerLink="/optics">Optical Software </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Reports & Analytics</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Marketing & Loyality</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Reports & Analytics</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active me-4" aria-current="page">Features</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active me-4"
+                  aria-current="page"
+                  routerLink="/about"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active me-4"
+                  aria-current="page"
+                  routerLink="/erp"
+                  >ERP</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active me-4" aria-current="page" href="#"
+                  >Customer Stories</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active me-4" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active me-4" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active me-4" href="#">Integrations</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="float-end">
+            <div class="language-dropdown">
+              <button class="dropdown-button" (click)="languageDropdown()">
+                <img
+                  [src]="selectedFlag"
+                  alt="Selected Flag"
+                  class="flag-icon"
+                />
+                {{ selectedLanguage }}
+                <i class="bi bi-chevron-down ms-2 fs-6"></i>
+              </button>
+              <ul class="dropdown-menu" [class.show]="islanguageDropdownOpen">
+                <li
+                  *ngFor="let lang of languages"
+                  (click)="selectLanguage(lang)"
+                >
+                  <img
+                    [src]="lang.flag"
+                    alt="{{ lang.name }} Flag"
+                    class="flag-icon"
+                  />
+                  {{ lang.name }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

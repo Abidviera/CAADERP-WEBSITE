@@ -1,0 +1,151 @@
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 50px;
+  
+  
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    
+    .office {
+      flex: 1;
+      margin: 0 15px;
+    }
+    
+    .office .flag {
+      width: 24px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    
+    h3 {
+      font-size: 18px;
+      color: #333;
+    }
+    
+    p {
+      margin: 5px 0;
+      font-size: 15px;
+      color: #3d3d3d;
+      font-weight: 500;
+    }
+    
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+    
+    .links {
+      flex: 1;
+      margin: 0 15px;
+    }
+    
+    .links h4 {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    
+    .links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .links ul li {
+      margin-bottom: 8px;
+    }
+    
+    .links ul li a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 14px;
+    }
+    
+    .links ul li a:hover {
+      text-decoration: underline;
+    }
+  
+    .footerLogo{
+      font-size: 50px;
+      color: #5b47fb;
+      font-weight: 800;
+      font-family: "Poppins", serif;
+      
+    }
+  }
+  
+  .footer-bottoms {
+    border-top: 1px solid #374151;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+     justify-content: space-between;
+    
+ p {
+    margin: 0;
+  }
+  
+  .legal-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+
+  }
+  
+  .legal-links a {
+    color: #030303;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .legal-links a:hover {
+    color: #000000;
+  }
+  
+  
+  
+  }
+  
+  
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #37415136;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #d1d5db;
+}
+
+.newsletter-form input::placeholder {
+  color: #9ca3af;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #2563eb;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #1d4ed8;
+}

@@ -1,0 +1,117 @@
+.section1{
+    
+    max-height: 100vh;
+    background: linear-gradient(to right, #000428, #004e92);
+
+
+    .navbar-brand span {
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .nav-link {
+      color: #a6a7a8 !important;
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover {
+      color: rgb(255, 255, 255) !important;
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .contact-link {
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+  
+
+
+
+.aside{
+    font-family: "Poppins", serif;
+    padding: 50px;
+    .badge {
+        background-color: rgba(254, 254, 254, 0.2);
+        border-radius: 20px;
+        display: inline-block;
+        padding: 7px 20px;
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
+    
+      h1 {
+        font-size: 56px;
+        font-weight: 800;
+        margin: 20px 0;
+        line-height: 1.4;
+        color: white;
+       
+      }
+    
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        color: white;
+     
+      }
+    
+      .buttons {
+        display: flex;
+        gap: 20px;
+      }
+    
+      .button {
+        background-color: #ffffff;
+        color: #4e31c9;
+        border: none;
+        border-radius: 30px;
+        padding: 12px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    
+      .button:hover {
+        background-color: #e8e8e8;
+      }
+    
+      .play-video {
+        display: inline-flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    
+      .play-video svg {
+        margin-right: 8px;
+      }
+
+     
+}
+.bside{
+    overflow:hidden;
+    .posimg{
+        width: 142%;
+        transform: rotate(0deg); 
+        transition: transform 0.3s ease; 
+        margin-top: 30%;
+        margin-left: -14%;
+      }
+
+      
+}
+
+}
+
+
+
